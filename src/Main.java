@@ -2,13 +2,23 @@ public class Main {
     public static void main(String[] args) {
         // Задача №1
         System.out.println("Задача №1");
-        int clientOS;
+        int clientOS = 1;
         clientOS = 2;
         System.out.println("Система, которую использует клиент, Android");
-        System.out.println("Установите версию приложения для Android по ссылке");
+        switch (clientOS) {
+            case 0:
+            case 1:
+                System.out.println("Установите версию приложения для iOS по ссылке");
+                break;
+            case 2:
+                System.out.println("Установите версию приложения для Android по ссылке");
+                break;
+            default:
+                System.out.println("Для правильной работы, пожалуйста, используйте систему iOS или Android!");
+        }
         // Задача №2
         System.out.println("Задача №2");
-        int clientDeviceYear;
+        int clientDeviceYear = 2014;
         clientDeviceYear = 2022;
 
         if (clientOS == 0 && clientDeviceYear >= 2015) {
@@ -30,7 +40,7 @@ public class Main {
                 // Задача №3
                 System.out.println("Задача №3");
                 System.out.println("Программа, которая вычисляет, является ли год високосным");
-                int year;
+                int year = 2021;
                 year = 2024;
 
                 boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
