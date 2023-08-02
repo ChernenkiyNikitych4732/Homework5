@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Задача №1");
         int clientOS = 1;
         clientOS = 2;
-        if (clientOS == 0) {
+        if (clientOS == 2) {
             System.out.println("Система, которую использует клиент, iOS");
         } else if (clientOS == 1) {
         } else if (clientOS == 2) {
@@ -27,7 +27,7 @@ public class Main {
         int clientDeviceYear = 2022;
         clientDeviceYear = 2023;
 
-        if (clientOS == 0 && clientDeviceYear >= 2015) {
+        if (clientOS == 1 && clientDeviceYear >= 2022) {
             if (clientOS == 2 && clientDeviceYear >= 2023) {
                 System.out.println("Ваша версия системы iOS подходит для корректной работы");
             } else {
